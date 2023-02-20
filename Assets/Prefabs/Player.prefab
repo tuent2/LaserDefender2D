@@ -180,7 +180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc92384cff510a041850dfaed81b4576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 1
   heath: 50
+  score: 0
+  hitEffect: {fileID: 1048624332464110245, guid: 8b476e8f3d87b694c8390afa29296da6, type: 3}
+  applyCameraShake: 1
 --- !u!58 &267246806795829514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -212,5 +216,8 @@ MonoBehaviour:
   projectTileFrefab: {fileID: 6869974599673230998, guid: 8ba8fd6c37c30dc4f88fdcedf4f2873e, type: 3}
   projectTileSpeed: 10
   projectTileLifeTime: 5
-  firingRate: 0.2
+  basefiringRate: 0.2
+  useAI: 0
+  firingRateVariance: 0
+  minimumFiringRate: 0.1
   isFiring: 0

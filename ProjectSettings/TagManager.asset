@@ -50,3 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 2976408089
     locked: 0
+  - name: Explosion
+    uniqueID: 100392839
+    locked: 0

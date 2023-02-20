@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8339970343208045871}
   - component: {fileID: -2525983340174345377}
   - component: {fileID: -2493189890536143277}
+  - component: {fileID: 1057624468584900344}
   m_Layer: 8
   m_Name: Enemy 0
   m_TagString: Untagged
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heath: 50
+  hitEffect: {fileID: 1048624332464110245, guid: 8b476e8f3d87b694c8390afa29296da6, type: 3}
 --- !u!114 &-2493189890536143277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +114,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+--- !u!114 &1057624468584900344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3502379428858222567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ab4420bf670334ab2d5b3e9eabc656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectTileFrefab: {fileID: 6869974599673230998, guid: ca8bf2fbde3352a4f8b57d884f525422, type: 3}
+  projectTileSpeed: 10
+  projectTileLifeTime: 5
+  basefiringRate: 1
+  useAI: 1
+  firingRateVariance: 0.5
+  minimumFiringRate: 0.1
+  isFiring: 0
 --- !u!1 &3676240218696600936
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,14 +158,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3676240218696600936}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2618222843286326951}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &4079692497907282368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -183,7 +205,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1318559207
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43dd42da14950de49b690dad9f19a167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
