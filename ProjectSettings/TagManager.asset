@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - player
+  - enemy
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: BackGround
     uniqueID: 2408424353
+    locked: 0
+  - name: Laser
+    uniqueID: 1047623335
     locked: 0
   - name: Player
     uniqueID: 2976408089

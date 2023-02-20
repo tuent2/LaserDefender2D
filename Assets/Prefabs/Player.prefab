@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4714180924420775925}
   - component: {fileID: 6166256222622266193}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: playerShip2_blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1318559207
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f2bdb0f5d1df30b44b39376da85b4da5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,7 +97,8 @@ GameObject:
   - component: {fileID: 2201858091107755105}
   - component: {fileID: 2501251534387504348}
   - component: {fileID: 267246806795829514}
-  m_Layer: 0
+  - component: {fileID: -1488225323002244147}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,3 +197,20 @@ CircleCollider2D:
   m_Offset: {x: -0.0052073, y: -0.01301825}
   serializedVersion: 2
   m_Radius: 0.4036649
+--- !u!114 &-1488225323002244147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7027295595005214300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ab4420bf670334ab2d5b3e9eabc656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectTileFrefab: {fileID: 6869974599673230998, guid: 8ba8fd6c37c30dc4f88fdcedf4f2873e, type: 3}
+  projectTileSpeed: 10
+  projectTileLifeTime: 5
+  firingRate: 0.2
+  isFiring: 0

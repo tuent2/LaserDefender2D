@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869974599464968155}
   - component: {fileID: 6869974599464968154}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: laserBlue05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1047623335
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a8648ed49d8e18f44b24c18677b66ecf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac8ab27cf9654214c957342bf04c85c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 6869974599673230996}
   - component: {fileID: 6869974599673230997}
   - component: {fileID: 6869974599673230987}
-  m_Layer: 7
-  m_Name: ProjectTile
+  m_Layer: 8
+  m_Name: EnemyTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
