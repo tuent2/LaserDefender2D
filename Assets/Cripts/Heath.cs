@@ -12,11 +12,13 @@ public class Heath : MonoBehaviour
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
     [SerializeField] bool applyCameraShake;
     void Awake (){
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        levelManager = FindObjectOfType<LevelManager>();
     }
     void OnTriggerEnter2D(Collider2D other) {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
@@ -36,6 +38,10 @@ public class Heath : MonoBehaviour
         if(heath <= 0){
             if(!isPlayer){
                 scoreKeeper.setCurrentScore(score);
+            }
+            else
+            {
+                levelManager.LoadGameOver();
             }
             Destroy(gameObject);
 

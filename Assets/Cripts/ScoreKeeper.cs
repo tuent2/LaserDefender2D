@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {   
-    private int currentScore;
-
+    private int currentScore =0;
+    static ScoreKeeper scoreKeeperInstance;
+    void Awake() {
+        ManagerScoreKeeperSingleToon();
+    }
+    void ManagerScoreKeeperSingleToon(){
+        if(scoreKeeperInstance !=null){
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        } else {
+            scoreKeeperInstance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     public int getCurrentScore(){
         return currentScore;
     }
@@ -19,15 +31,5 @@ public class ScoreKeeper : MonoBehaviour
     public void resetScore(){
         currentScore = 0;
     }
-
-    void Start()
-    {
-        
-    }
-
     
-    void Update()
-    {
-        
-    }
 }
